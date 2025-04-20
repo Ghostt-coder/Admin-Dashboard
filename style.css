@@ -31,7 +31,7 @@ h1{
     top: 15%;
     right: 34%;
     border: 1px solid white;
-    height: 69%;
+    height: 80%;
     width: 30%;
     gap: 35px;
     font-size : 22px;
@@ -85,3 +85,32 @@ img{
     font-family: "NorseBold" ;
     src: url(Norse-Bold.otf);
 }
+
+p#error1, p#error2 {
+    color: #ff0a38;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 0.03rem;
+}
+
+.passContainer{
+    display : flex;
+    align-items: center;
+    position : relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    /* optional transition for smooth swap */
+    transition: opacity 0.2s ease;
+  }
+  
+  .passContainer input {
+    /* keep your existing height, border‑radius, etc. */
+    width: 100%;
+    padding-right: 40px;    /* ← room for the 20px icon + some breathing room */
+  }
