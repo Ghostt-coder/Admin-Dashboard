@@ -1,0 +1,87 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+    color : white;
+}
+
+.bg-video{
+    position : fixed;
+    /* top:0;
+       left:0; */
+    min-width : 100%; 
+    min-height : 100%; 
+    z-index: -1;
+    object-fit : cover;
+    height : 15px;
+}
+
+body{
+
+}
+
+h1{
+    margin: 10px 1.7em;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+    right: 34%;
+    border: 1px solid white;
+    height: 69%;
+    width: 30%;
+    gap: 35px;
+    font-size : 22px;
+    padding:20px;
+    border-radius: 32px;
+    backdrop-filter: blur(3px);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: space-evenly;
+     */
+     gap:15px;
+}
+
+input {
+    height: 40px;
+    border-radius: 14px;
+    color: black;
+    padding: 10px;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    margin: 1.5em 7.3em;
+    color: black;
+    font-size: 16px;
+    /* align-content: center; */
+}
+
+img{
+    height : 75px
+}
+.logoPara{
+    position : absolute;
+    margin : 15px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    gap : 10px;
+    font-size : 25px;
+    font-family : "NorseBold";
+    letter-spacing: 0.2rem;
+}
+
+@font-face {
+    font-family: "NorseBold" ;
+    src: url(Norse-Bold.otf);
+}
