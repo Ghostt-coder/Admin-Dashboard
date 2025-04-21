@@ -13,7 +13,7 @@ form.addEventListener('submit', (e)=>{
           email.style.borderColor = "crimson";
         } 
         
-        if(password.value!=="09"){
+        if(password.value!=="07"){
             e.preventDefault();
             error2.textContent="you seroius? this is 2nd grade sum";
             password.style.borderColor = "crimson";

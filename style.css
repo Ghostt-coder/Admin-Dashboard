@@ -3,6 +3,7 @@
     padding : 0;
     box-sizing : border-box;
     color : white;
+    font-family : monospace;
 }
 
 .bg-video{
@@ -77,13 +78,17 @@ img{
     align-items: center;
     gap : 10px;
     font-size : 25px;
-    font-family : "NorseBold";
     letter-spacing: 0.2rem;
+}
+
+.logoPara p{
+    font-family : "NorseBold";
+
 }
 
 @font-face {
     font-family: "NorseBold" ;
-    src: url(Norse-Bold.otf);
+    src: url("Norse-Bold.otf") format("opentype");
 }
 
 p#error1, p#error2 {
