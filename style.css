@@ -1,121 +1,184 @@
-*{
-    margin : 0;
-    padding : 0;
-    box-sizing : border-box;
-    color : white;
-    font-family : monospace;
-}
-
-.bg-video{
-    position : fixed;
-    /* top:0;
-       left:0; */
-    min-width : 100%; 
-    min-height : 100%; 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: monospace;
+  }
+  
+  .bg-video {
+    position: fixed;
+    top : 0;
+    left : 0;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
-    object-fit : cover;
-    height : 15px;
+    object-fit: cover;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  h1 {
+    margin: 0.6rem 3rem;
+    font-size: 4rem;
+    text-align: center;
 }
-
-body{
-
-}
-
-h1{
-    margin: 10px 1.7em;
-}
-
-.content {
+  
+  .content {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 15%;
     right: 34%;
-    border: 1px solid white;
+    border: 0.0625rem solid white;
     height: 80%;
     width: 30%;
-    gap: 35px;
-    font-size : 22px;
-    padding:20px;
-    border-radius: 32px;
+    gap: 2rem;
+    font-size: 1.375rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
     backdrop-filter: blur(3px);
-}
-
-form{
+    background-color: rgba(255, 255, 255, 0.05); /* Optional subtle background */
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-content: space-evenly;
-     */
-     gap:15px;
-}
-
-input {
-    height: 40px;
-    border-radius: 14px;
+    gap: 1rem;
+    font-size : 2rem;
+  }
+  
+  input {
+    height: 3.5rem;
+    border-radius: 0.875rem;
     color: black;
-    padding: 10px;
+    padding: 0.625rem;
+    font-size: 1.2rem;
 }
 
 button {
-    height: 40px;
-    width: 100px;
-    border-radius: 20px;
-    margin: 1.5em 7.3em;
+    height: 3.5rem;
+    width: 8.25rem;
+    border-radius: 2.25rem;
+    margin: 1.5rem auto;
     color: black;
-    font-size: 16px;
-    /* align-content: center; */
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
 }
-
-img{
-    height : 75px
-}
-.logoPara{
-    position : absolute;
-    margin : 15px;
-    display : flex;
+  
+  img {
+    height: 4.6875rem;
+  }
+  
+  .logoPara {
+    position: absolute;
+    margin: 1rem;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap : 10px;
-    font-size : 25px;
+    gap: 0.625rem;
+    font-size: 1.5625rem;
     letter-spacing: 0.2rem;
-}
-
-.logoPara p{
-    font-family : "NorseBold";
-
-}
-
-@font-face {
-    font-family: "NorseBold" ;
+  }
+  
+  .logoPara p {
+    font-family: "NorseBold";
+  }
+  
+  @font-face {
+    font-family: "NorseBold";
     src: url("Norse-Bold.otf") format("opentype");
-}
-
-p#error1, p#error2 {
+  }
+  
+  p#error1,
+  p#error2 {
     color: #ff0a38;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 900;
     letter-spacing: 0.03rem;
-}
-
-.passContainer{
-    display : flex;
+  }
+  
+  .passContainer {
+    display: flex;
     align-items: center;
-    position : relative;
-}
-
-.toggle-password {
+    position: relative;
+  }
+  
+  .toggle-password {
     position: absolute;
-    right: 12px;
+    right: 0.75rem;
     cursor: pointer;
-    width: 20px;
-    height: 20px;
-    /* optional transition for smooth swap */
+    width: 1.25rem;
+    height: 1.25rem;
     transition: opacity 0.2s ease;
   }
   
   .passContainer input {
-    /* keep your existing height, border‑radius, etc. */
     width: 100%;
-    padding-right: 40px;    /* ← room for the 20px icon + some breathing room */
+    padding-right: 2.5rem;
   }
+  
+  /* Responsive layout adjustments */
+  @media (max-width: 1024px) {
+    .content {
+      width: 45%;
+      right: 25%;
+    }
+  
+    h1 {
+      font-size: 1.75rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      width: 80%;
+      right: 10%;
+      top: 10%;
+      height: auto;
+      padding: 1rem;
+      font-size: 1.1rem;
+    }
+  
+    button {
+      margin: 1rem auto;
+      width: 80%;
+    }
+  
+    h1 {
+      margin: 1rem;
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logoPara {
+      font-size: 1rem;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+    }
+  
+    .content {
+      width: 90%;
+      right: 5%;
+      padding: 1rem;
+      gap: 1rem;
+      font-size: 1rem;
+    }
+  
+    input {
+      height: 2.25rem;
+      font-size: 0.9rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      width: 100%;
+    }
+  }
+  
