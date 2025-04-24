@@ -59,7 +59,7 @@ let isNight = true;
 bgChange.addEventListener('click',()=>{
      if(isNight){
         document.body.style.backgroundImage = 'url("day.png")';
-        bgChange.src="/svgs/moon.svg"
+        bgChange.src="svgs/moon.svg"
         buttons.forEach(button=>{
           button.style.backgroundColor = "white";
           button.style.color = "black";
@@ -69,7 +69,7 @@ bgChange.addEventListener('click',()=>{
         });
       } else {
         document.body.style.backgroundImage = 'url("night.png")';
-        bgChange.src="/svgs/sun.svg"
+        bgChange.src="svgs/sun.svg"
         buttons.forEach(button=>{
           button.style.backgroundColor = "black";
           button.style.color = "white";

@@ -162,40 +162,40 @@ button.btn {
 
 
 .card-1{
-    background-image: url('/athletes/cr7.jpg');
+    background-image: url('athletes/cr7.jpg');
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.1); /* dark semi-transparent */
 }
 .card-2{
-    background-image: url('/athletes/virat.jpeg');
+    background-image: url('athletes/virat.jpeg');
     background-size: cover;
 }
 .card-3{
-    background-image: url('/athletes/kobe-bryant.jpg');
+    background-image: url('athletes/kobe-bryant.jpg');
     background-size: cover;
 }
 .card-4{
-    background-image: url('/athletes/conor.jpeg');
+    background-image: url('athletes/conor.jpeg');
     background-size: cover;
 }
 .card-5{
-    background-image: url('/athletes/davidGoggins.jpeg');
+    background-image: url('athletes/davidGoggins.jpeg');
     background-size: cover;
 }
 .card-6{
-    background-image: url('/athletes/stephCurry.jpeg');
+    background-image: url('athletes/stephCurry.jpeg');
     background-size: cover;
 }
 .card-7{
-    background-image: url('/athletes/michealSchumacher.jpeg');
+    background-image: url('athletes/michealSchumacher.jpeg');
     background-size: cover;
 }
 .card-8{
-    background-image: url('/athletes/tony.jpeg');
+    background-image: url('athletes/tony.jpeg');
     background-size: cover;
 }
 .card-9{
-    background-image: url('/athletes/miles.jpg');
+    background-image: url('athletes/miles.jpg');
     background-size: cover;
 }
 
