@@ -3,9 +3,12 @@
     padding : 0;
     box-sizing : border-box;
     /* color : white;  */
+    font-family : monospace;
+    font-size : 1rem;
 }
 
 body {
+    transition: background-image 0.5s ease;
     background-image: url(day.png);
     background-size:cover;
     background-attachment: fixed;
@@ -17,8 +20,10 @@ body {
 }
 
 header,aside{
-    border : 2px solid black;
-    
+    border : 1px solid black;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius : 1rem;
 }
 
 header{
@@ -113,7 +118,104 @@ button.btn {
 }
 
 
-.motivator {
+.task{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 1.2rem;
+}
+.task h3{
+    font-size: 2rem;
+}
+.task p{
+    font-size : 1rem;
+    font-weight : 600;
+}
+.task button {
+    height: 3rem;
+    width: 7rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+
+.style{
+    border-radius : .7rem;
+    /* color : white; */
+    position: relative;
+    color: white; /* Makes the text white */
+    overflow: hidden;
+}
+.style::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    z-index: 1;
+}
+
+.style p, .style strong {
+    position: relative;
+    z-index: 2; /* Puts text above overlay */
+}
+
+
+.card-1{
+    background-image: url('/athletes/cr7.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.1); /* dark semi-transparent */
+}
+.card-2{
+    background-image: url('/athletes/virat.jpeg');
+    background-size: cover;
+}
+.card-3{
+    background-image: url('/athletes/kobe-bryant.jpg');
+    background-size: cover;
+}
+.card-4{
+    background-image: url('/athletes/conor.jpeg');
+    background-size: cover;
+}
+.card-5{
+    background-image: url('/athletes/davidGoggins.jpeg');
+    background-size: cover;
+}
+.card-6{
+    background-image: url('/athletes/stephCurry.jpeg');
+    background-size: cover;
+}
+.card-7{
+    background-image: url('/athletes/michealSchumacher.jpeg');
+    background-size: cover;
+}
+.card-8{
+    background-image: url('/athletes/tony.jpeg');
+    background-size: cover;
+}
+.card-9{
+    background-image: url('/athletes/miles.jpg');
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .motivator {
     background: linear-gradient(135deg, #fdfbfb, #ebedee);
     padding: 1rem;
     border-radius: 1rem;
@@ -160,4 +262,4 @@ button.btn {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(720deg); }
   }
-  
+   */

@@ -29,9 +29,9 @@ toggle.addEventListener('click', ()=>{
 
     if(input.type === "password"){
           input.type = "text";
-          toggle.src='notshow.svg'
+          toggle.src='/svgs/notshow.svg'
     } else {
           input.type = "password";
-          toggle.src='show.svg';
+          toggle.src='/svgs/show.svg';
     }
 });
